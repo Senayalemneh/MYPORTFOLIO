@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import reportWebVitals from './reportWebVitals';
+import About from './About';
+import './About.css';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import Next from './Next';
+import Previousworks from "./components/Previousworks";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// import "./Pages/About.css";
+// pages
+import Projects from './Pages/Projects';
+import Contactpage from './Pages/Contactpage';
+import Aboutpage from './Pages/Aboutus';
+import NoPage from './Pages/NoPage';
+import Homepage from './Pages/Homepage';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/"    element={<Homepage/>} />
+        <Route path="/about" element={<Aboutpage />} />
+        <Route path="/projects" element={
+        <div>
+        <Projects 
+        setup="I got my daughter a fridge for her birthday."
+        punchline="I can't wait to see her face light up when she opens it."
+        />
+        </div>
+       }/>
+
+        <Route path="/contact" element={<Contactpage />} />
+        <Route path="*" element={<NoPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;

@@ -1,0 +1,152 @@
+.set1,
+.set2,
+.set3,
+.set4
+{
+    margin: 0;
+    padding:0;
+}
+.all{
+    display: grid;
+    gap:50px;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+
+}
+.img-p{
+    display: flex;
+
+}
+.set1,
+.set2,
+.set3,
+.set4{
+    border: 1 solid red;
+    box-shadow: 5px 5px 5px 5px black;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 50px;
+    border-radius: 20px;
+}
+.img-p{
+  color:blue;
+}
+.all > h1{
+    color: blue;
+    
+}
+
+
+.Projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3px;
+    background-color:rgb(7, 7, 148);
+    padding: 140px;
+    color: white;
+}
+.Mycomp{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: 40px;
+}
+
+
+.nopage{
+    background-color: red;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.contact{
+    list-style-type: none;
+    font-size: 30px;
+    padding: 20px;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 191, 0);
+}
+
+
+/* //MEME */
+
+.meme-nav{
+    background-color: rgb(129, 12, 231);
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.meme-nav >h2{
+color: white;
+padding-left:15px;
+
+}
+.meme-nav >h4{
+    color: white;    
+    /* padding-right: auto; */
+    margin-left: auto;
+    padding: 10px;
+    }
+.meme-nav > img{
+width: 80px;
+margin-left:5px;
+margin-right: 0px;
+    }
+.meme-body{
+margin: 20px;
+padding: 20px;
+background-color: rgb(232, 223, 223);
+    }
+.input1{
+    margin-right:160px; 
+    margin-left: 300px;
+    height: 50px;
+    width: 200px;
+    /* text-align: center; */
+    font-size: 30px;
+}
+.input2{
+    margin-left:350px; 
+    height: 50px;
+    width: 200px;
+    /* text-align: center; */
+    font-size: 30px;
+    color:  rgb(129, 12, 231);
+}
+.meme-btn{
+    /* margin-left: 400px;
+    margin-right:400px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 50px;
+    background-color:  rgb(129, 12, 231);
+    color: white;
+    border: 4px solid rgb(251, 255, 0);
+    border-radius: 30px;
+}
+.meme-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: ;
+}
+.memeimage{
+    padding: auto;
+    margin-left: 300px;
+    width:50%;
+    height: 50%;;
+}
